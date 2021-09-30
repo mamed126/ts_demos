@@ -1,0 +1,10 @@
+//looping
+let cities:string[]=['baku','sheki']
+
+for(let index in cities){
+console.log(cities[index]);
+}
+
+for(let city of cities){
+console.log(city);
+}

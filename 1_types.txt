@@ -1,0 +1,55 @@
+//types
+
+//primitives: string,number,boolean
+let fullName: string = `mamed nesrullayev`;
+let age: number = 31;
+
+let sentence: string = `Hello, my name is ${fullName}.
+ 
+I'll be ${age + 1} years old next month.`;
+
+/*console.log(sentence)*/
+
+let y:boolean=false;
+let z:number=50;
+
+//array
+let cities:string[]=["baku","sheki","kabala"]
+let cities2:Array<string>=["salyan","sabirabad","neftchala"]
+
+//tuple
+
+let myTuple:[string,number]
+myTuple=["item1",1]
+/*
+console.log(myTuple[0])
+console.log(myTuple[1])
+*/
+
+//enums
+enum Color {Red,Green,Blue}
+
+let myColor:Color=Color.Green
+
+/*console.log(myColor);*/
+
+//unknown
+let unknownType:unknown=5
+unknownType="string value"
+unknownType=false
+
+//any
+let anyType:any=100
+anyType=false
+anyType='test any'
+
+
+//void 
+
+function doWork():void{
+  console.log("work completed!")
+}
+
+doWork()
+
+//undefined,null

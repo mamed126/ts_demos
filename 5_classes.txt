@@ -1,0 +1,26 @@
+//classes
+
+class Truck{
+  _brand:string;
+  _model:string;
+
+  constructor(brand:string,model:string){
+    this._model=model;
+    this._brand=brand;
+  }
+
+  getInfo(enginePower:number){
+    return `Truck brand and model:${this._brand} ${this._model}, with ${enginePower} HP`;
+  }
+
+  displayFuel(){
+    console.log('displaying fuel...');
+  }
+}
+
+let truck=new Truck("Iveco","Highway");
+
+truck.displayFuel();
+
+let info=truck.getInfo(450);
+console.log(info);

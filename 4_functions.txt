@@ -1,0 +1,49 @@
+//functions
+function add(a:number,b:number):number{
+  return a+b;
+}
+
+function display(message:string):void{
+  console.log(message);
+}
+
+//def parameters
+
+function inc(a:number,b:number=1):number{
+  return a+b;
+}
+
+/*
+console.log(inc(5))
+console.log(inc(5,4))
+*/
+
+//optional parameters
+
+function inc2(a:number,incr?:number):number{
+  //optional parametr verilmisse topla verilmezse bir artir geri dondur
+  if(incr){
+    return a+incr;
+  }
+  else
+  {
+    return a+1;
+  }
+}
+
+/*
+console.log(inc2(10))
+console.log(inc2(10,20))
+*/
+
+//rest parameter
+function getNames(firstName: string, ...restOfName: string[]) {
+  return firstName + " " + restOfName.join(" ");
+}
+
+console.log(getNames("mamed","nasrullayev"))
+console.log(getNames("mamed","nasrullayev","mehman oglu"))
+
+
+
+
