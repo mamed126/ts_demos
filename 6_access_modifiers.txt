@@ -1,0 +1,3 @@
+public : The public modifier allows class properties and methods to be accessible from all locations.
+private : The private modifier limits the visibility to the same-class only. 
+protected : The protected modifier allows properties and methods of a class to be accessible within same class and within subclasses.

@@ -1,0 +1,6 @@
+try {  
+  throw new Error('Something bad happened');
+}
+catch(e) {  
+  console.log(e);
+}

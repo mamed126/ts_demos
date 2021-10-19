@@ -1,0 +1,39 @@
+interface CarInterface {
+  model: string;
+  year: string;
+  getUnitsSold(): number;
+}
+
+class Car implements CarInterface {
+  model: string;
+  year: string;
+  getUnitsSold() {
+    // logic to return number of units sold
+    return 100;
+  }
+
+  constructor(model: string, year: string) {
+    this.model = model;
+    this.year = year;
+  }
+}
+
+//extending interface
+
+interface PetsInterface {
+  name: string;  
+}
+interface DogInterface extends PetsInterface {
+  breed: string;
+}
+interface CatInterface extends PetsInterface {
+  breed: string;
+}
+class Cat implements CatInterface {
+  name: string = 'Garfield';
+  breed: string = 'Tabby';
+}
+class Dog implements DogInterface {
+  name: string = 'Rover';
+  breed: string = 'Poodle';
+}
